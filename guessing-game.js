@@ -36,8 +36,9 @@ function secretNumber() {
 }
 secretNumber();
 
-
-
+let firstHintContainer = document.querySelector('.hint-2-container');
+let secondHintContainer = document.querySelector('.hint-2-container');
+let thirdHintContainer = document.querySelector('.hint-3-container');
 
 function all() {
     if (/^\d+$/.test(inputElement.value)) {
@@ -49,7 +50,7 @@ function all() {
             playAgain.innerHTML = `<div class=replay-message>
                 Do you want to play again?!</div>
                 <div class="l">
-                <a href="guessing-game.html">
+                <a href="index.html">
                     <button class="yes-button">Yes</button>
                 </a>
                 <button class="no-button">No</button>
@@ -100,7 +101,7 @@ function all() {
 
 let hintsContainer = document.querySelector('.hints-container');
 
-let firstHintContainer = document.querySelector('.hint-1-container');
+
 let firstHintButton = document.querySelector('.hint-1-button');
 
 firstHintButton.addEventListener('click', () => {
@@ -113,7 +114,7 @@ firstHintButton.addEventListener('click', () => {
 })
 
 
-let secondHintContainer = document.querySelector('.hint-2-container');
+
 let secondHintButton = document.querySelector('.hint-2-button');
 
 secondHintButton.addEventListener('click', () => {
@@ -129,7 +130,7 @@ secondHintButton.addEventListener('click', () => {
 
 })
 
-let thirdHintContainer = document.querySelector('.hint-3-container');
+
 let thirdHintButton = document.querySelector('.hint-3-button');
 
 thirdHintButton.addEventListener('click', () => {
