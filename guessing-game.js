@@ -47,6 +47,11 @@ function all() {
         if (Number(inputElement.value) === randomNumber) {
             console.log('You Win')
             message.innerHTML = 'Congrats.. You win!';      
+            
+            firstHintContainer.innerHTML = '';
+            secondHintContainer.innerHTML = '';
+            thirdHintContainer.innerHTML = '';
+            
             playAgain.innerHTML = `<div class=replay-message>
                 Do you want to play again?!</div>
                 <div class="l">
